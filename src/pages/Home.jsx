@@ -1,19 +1,10 @@
-import React from "react";
-import TaskManager from "../components/TaskManager";
-import Card from "../components/Card";
+import React from 'react';
 
-const Home = () => {
+export default function Home() {
   return (
-    <div className="space-y-6">
-      <Card title="Welcome to PLP Task Manager">
-        <p className="mb-4">
-          Manage your tasks efficiently with this simple and intuitive task
-          manager.
-        </p>
-      </Card>
-      <TaskManager />
+    <div className="text-center max-w-2xl mx-auto mt-20">
+      <h1 className="text-4xl font-extrabold mb-4 text-blue-700">Welcome to the Task Management App</h1>
+      <p className="text-lg text-gray-700">To add a task click the Task button in the top right corner. Add, Click to check after completeing a task then Delete</p>
     </div>
   );
-};
-
-export default Home;
+}

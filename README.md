@@ -1,13 +1,90 @@
-# PLP Task Manager README
 
-This README describes the functionality of the added code for the PLP Task Manager project, a React application built with Vite, Tailwind CSS, and React Router.
+# 📝 Task Management App
 
-## Added Code Functionality
+A simple React-based task management application that allows users to:
 
-- **Task Management**: Enables adding, deleting, marking tasks as completed, and filtering tasks (All, Active, Completed) with local storage persistence using a custom `useLocalStorage` hook.
-- **API Integration**: Fetches and displays posts from JSONPlaceholder API, with pagination, search functionality, and loading/error states, implemented in `APIData.jsx`.
-- **Responsive Design**: Uses Tailwind CSS for a mobile, tablet, and desktop-friendly layout with utility classes for styling and dark mode support.
-- **Theme Switching**: Implements light/dark mode toggle with React Context (`ThemeContext.js`, `ThemeProvider.jsx`), persisting the theme in local storage.
-- **Reusable Components**: Includes `Button.jsx` (with variants), `Card.jsx` (boxed content), `Navbar.jsx` (navigation with theme toggle), `Footer.jsx` (links and copyright), and `Layout.jsx` (wraps pages with Navbar and Footer).
-- **Routing**: Configures client-side navigation between Home and API Data pages using React Router in `App.jsx`.
-- **Animations**: Adds fade-in transitions for task items and API data display, defined in `App.css`.
+* Add new tasks
+* Attach files to tasks
+* Mark tasks as completed
+* Delete tasks
+
+> ⚠️ **Note:** The UI is currently very basic and under active development. Future versions will include enhanced styling and user experience improvements.
+
+---
+
+## 🚀 Features
+
+* ✅ Add new tasks
+* 📎 Upload files related to tasks
+* ❌ Delete tasks
+* ✔️ Mark tasks as completed
+
+---
+
+## 🛠️ Getting Started
+
+### Prerequisites
+
+Ensure you have the following installed on your machine:
+
+* **Node.js** (v14 or later)
+* **npm** (v6 or later) or **yarn**
+
+### Installation
+
+1. **Clone the repository**
+
+   ```bash
+   git clone https://github.com/Joe21-dev/task-management-app.git
+   cd task-management-app
+   ```
+
+2. **Install dependencies**
+   Using npm:
+
+   ```bash
+   npm install
+   ```
+
+   Or using yarn:
+
+   ```bash
+   yarn install
+   ```
+
+3. **Start the development server**
+
+   ```bash
+   npm start
+   ```
+
+   Or with yarn:
+
+   ```bash
+   yarn start
+   ```
+
+4. Open your browser and navigate to:
+
+   ```
+   http://localhost:3000
+   ```
+
+---
+
+## 📌 Notes
+
+* This app is **not connected to a backend**. Uploaded files are handled locally and not persisted.
+* Tasks are stored in **memory** for now — refreshing the page will reset the state.
+* Future plans include persistent storage and enhanced UI/UX.
+
+---
+
+## 🧪 To Do
+
+* [ ] Integrate backend for file persistence
+* [ ] Improve UI/UX
+* [ ] Add task categories/tags
+* [ ] Add due dates and reminders
+
+
